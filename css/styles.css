@@ -1,0 +1,146 @@
+:root {
+    --primary : #fcd0b3;
+    --primary-bg : #161a34;
+    --crimson : #D7263D;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: none;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+.navigation {
+    background-color: black;
+    align-items: center;
+    margin: 0;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    margin-right: 35px;
+}
+
+.list-content {
+    margin: 15px;
+    display: inline-block;
+    list-style: none;
+    font-size: large;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.list-content-link {
+    display: inline-block;
+    list-style: none;
+    font-size: large;
+    color: var(--primary);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.list-content-link:hover {
+    color: var(--crimson);
+}
+
+.banner {
+    background-color: var(--primary-bg);
+    color: var(--primary);
+    text-align: center;
+    padding: 5px;
+    z-index: 0;
+}
+
+.title-1 {
+    color:var(--crimson);
+}
+
+.title-2 {
+    color: yellow;
+}
+
+hr {
+    border: 1px solid var(--primary);
+}
+
+.search-col {
+    padding: 10px;
+    background-color: var(--primary);
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.btn-search {
+    padding: 10px;
+    background-color: var(--primary);
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.main-list {
+    background-color: var(--primary-bg);
+    padding: 15px;
+    color: var(--primary);
+}
+
+.movie-row {
+    display: inline-flex;
+}
+
+.movie-col {
+    width: 305px;
+    margin: 12px;
+    padding: 15px;
+    border-radius: 7px;
+    background: rgb(64,55,145);
+    background: linear-gradient(211deg, rgba(64,55,145,1) 13%, rgba(73, 1, 7, 0.998) 83%);
+    color: var(--primary);
+    display: block;
+    flex-direction: column;
+    flex: 1 0 0%;
+}
+
+
+.img-poster {
+    height: 445px;
+}
+
+.imdb-button {
+    padding: 10px;
+    background-color: var(--primary);
+    color: var(--primary-bg);
+    border-radius: 5px;
+    text-decoration: none;
+    margin-bottom: 71px;
+    color: var(--primary-bg);
+    font-weight: bold;
+}
+
+.imdb-button:hover {
+    color: var(--crimson);
+}
+
+/*MOBILE*/
+@media screen and (max-width: 768px) {
+    body, html {
+        background-repeat: no-repeat;
+        scroll-behavior: smooth;
+        scroll-snap-type: none;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+    }
+
+    .movie-row {
+        display: block;
+    }
+
+}
