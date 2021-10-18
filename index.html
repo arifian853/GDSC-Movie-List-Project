@@ -6,6 +6,7 @@
         <title>MovieInfo.com</title>
         <meta name="description" content="Movie Info list">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/x-icon" href="img/movie-reel.png" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,16 +24,17 @@
         </nav>
     <body>
         <div class="banner">
-            <h1 id="text"> </h1><h1 ><span class="title-1">Movie</span><span class="title-2">Info</span>.com</h1>
+            <h1> Welcome to <span class="title-1">Movie</span><span class="title-2">Info</span>.com <img class="title-logo" src="img/movie-reel.png" alt=""></h1>
             <hr class="hr-primary"/>
-            <h4 style="letter-spacing : 1px;">You can search a movie description here : 
-            </h4>
-            <input type="search" placeholder="Search Movie" name="Search" id="searchMovie" class="search-col"> <button class="btn-search" type="submit">Search</button>
-            <br> <br>
+            <h4 style="letter-spacing : 1px;">You can search a movie description here : </h4>
+            <form id="form">
+                <input type="text" placeholder="Search Movie" id="search" class="search-col">
+            <br>
+            </form>
         </div>
         <div class="main-list">
-            <h4 align="center">Featured Movie : </h4>
-            <div class="movie-row">
+            <h3 align="center">Featured movies :</h3>
+            <div id='main' class="movie-row">
                 <div class="movie-col">
                     <h2>Interstellar (2014)</h2>
                     <img class="img-poster" src="img/interstellar-poster.jpg" alt="poster">
@@ -46,20 +48,22 @@
                     <br> <br>
                 </div>
 
-                <div class="movie-col">
-                    <h2>Interstellar (2014)</h2>
-                    <img class="img-poster" src="img/interstellar-poster.jpg" alt="poster">
-                    <p>Genre : Adventure, Drama, Sci-Fi</p>
-                    <p>A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.</p>
-                    <p>Certificate : R</p>
-                    <p>Duration : 2h 49min</p>
-                    <hr>
-                    <h5>IMDb rating : 8.6/10 </h5>
-                    <a href="https://www.imdb.com/title/tt0816692/?ref_=hm_fanfav_tt_t_24_pd_fp1" target="_blank" class="imdb-button">View on IMDb</a>
-                    <br> <br>
-                </div>
             </div>
         </div>
-        <script src="js/script.js"></script>
+        
     </body>
+    <footer>Copyright © Arifian Saputra, 2021. All rights reserved. <br> <br>
+        <a href="https://www.facebook.com/arifian.syaputra.9/" target="_blank" > <img src="img/024-facebook.png" class="img-logo-social-footer" alt=""> </a>
+        <a href="https://www.instagram.com/arifiansaputra_/" target="_blank" >  <img src="img/044-instagram.png" class="img-logo-social-footer" alt=""> </a>
+        <a href="https://twitter.com/ArifianSaputra1" target="_blank" >  <img src="img/096-twitter.png" class="img-logo-social-footer" alt=""> </a>
+        <a href="https://www.linkedin.com/in/arifian-saputra-08135a178/" target="_blank" >  <img src="img/052-linkedin.png" class="img-logo-social-footer" alt=""> </a>
+        <a href="https://www.linkedin.com/in/arifian-saputra-08135a178/" target="_blank" >  <img src="img/032-github.png" class="img-logo-social-footer" alt=""> </a>
+        <a href="mailto:arifiansaputra43@gmail.com" >  <img src="img/016-email.png" class="img-logo-social-footer" alt=""> </a>
+            <br> 
+            <p>My personal page : <a href="https://arifian853.github.io" target="_blank">Here</a> </p>
+            <p>Made for GDSC project assignment.</p>
+            <img class="footer-icon" src="img/GDSC Vertical.svg" alt="">
+    </footer>
 </html>
+
+<script src="js/script.js"></script>
