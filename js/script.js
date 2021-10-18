@@ -1,12 +1,66 @@
-var i=0,text;
-    
-var text = " Welcome to  ";
+const API_KEY = 'api_key=2408d97ca041d49d3c3430939082247c';
+const BASE_URL = 'https://api.themoviedb.org/3';
+const API_URL = BASE_URL + '/discover/movie?sort_by=popularity.desc&' + API_KEY;
+const IMG_URL = 'https://image.tmdb.org/t/p/w500';
+const SEARCH_URL = BASE_URL + '/search/movie?' + API_KEY;
 
-function typing() {
-    if(i<text.length){
-        document.getElementById("text").innerHTML += text.charAt(i);
-        i++;
-        setTimeout(typing,200);
+const main = document.getElementById('main');
+const form = document.getElementById('form');
+const search = document.getElementById('search');
+
+getMovies(API_URL);
+function getMovies(url) {
+
+    fetch(url).then(res => res.json()).then(data => {
+        console.log(data.results)
+       showMovies(data.results);
+    })
+}
+
+function showMovies(data) {
+    main.innerHTML = '';
+
+    data.forEach(movie => {
+        const {title, poster_path, vote_average, overview, release_date} = movie;
+        const movieEl = document.createElement('div');
+        movieEl.classList.add('movie');
+        movieEl.innerHTML = `
+        <div class="movie-col">
+        <h2 class="title-movie-card">${title}</h2>
+        <img class="img-poster" src="${IMG_URL+poster_path}" alt="${title}">
+        <h3>Release date : ${release_date}  </h3>
+        <hr>
+        <h3> Overview : </h3>
+        <p class="overview-section">${overview}</p>
+        <hr>
+        <h3 class="${getColor(vote_average)}">Rating : ${vote_average} </h3>
+        </div>`
+
+        main.appendChild(movieEl);
+    })
+}
+
+function getColor(vote) {
+    if (vote >= 8) {
+        return 'green';
+    }
+    else if (vote >= 5 ) {
+        return 'orange';
+    }
+    else {
+        return 'red';
     }
 }
-typing();
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const searchTerm = search.value;
+
+    if (searchTerm) {
+        getMovies(SEARCH_URL+'&query='+searchTerm)
+    }
+    else {
+        getMovies(API_URL);
+    }
+})
