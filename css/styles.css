@@ -24,6 +24,8 @@ body {
     background-color: black;
     align-items: center;
     margin: 0;
+    border-bottom: 2px solid var(--primary);
+    border-top: 2px solid var(--primary);
 }
 
 .nav-list {
