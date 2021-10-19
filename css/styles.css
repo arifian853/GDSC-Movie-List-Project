@@ -85,7 +85,9 @@ hr {
 }
 
 .search-col {
-    padding: 10px;
+    padding: 15px;
+    width: 260px;
+    font-size: medium;
     background-color:#0d0e14;
     border-radius: 7px;
     color: var(--primary);
@@ -142,21 +144,6 @@ hr {
     border-radius: 5px;
 }
 
-.imdb-button {
-    padding: 10px;
-    background-color: var(--primary);
-    color: var(--primary-bg);
-    border-radius: 5px;
-    text-decoration: none;
-    margin-bottom: 71px;
-    color: var(--primary-bg);
-    font-weight: bold;
-}
-
-.imdb-button:hover {
-    color: var(--crimson);
-}
-
 footer {
     padding: 25px;
     background-color: black;
@@ -190,8 +177,7 @@ footer {
         overflow-x: hidden;
     }
 
-    .movie-row {
-        display: block;
+    .overview-section {
+        max-height: 360px;
     }
-
 }
