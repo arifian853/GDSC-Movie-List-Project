@@ -127,6 +127,10 @@ hr {
     flex: 1 0 0%;
 }
 
+.movie-col:hover {
+    box-shadow: 5px 5px 10px 2px rgb(255, 51, 0, 10);
+}
+
 .title-movie-card {
     width: 305px;
     height: 65px;
