@@ -31,7 +31,7 @@ function showMovies(data) {
         <h3>Release date : ${release_date}  </h3>
         <hr>
         <h3> Overview : </h3>
-        <p class="overview-section">${overview}</p>
+        <p style="letter-spacing:0.2px;" class="overview-section">${overview}</p>
         <hr>
         <h3 class="${getColor(vote_average)}">Rating : ${vote_average} </h3>
         </div>`
@@ -40,11 +40,11 @@ function showMovies(data) {
     })
 }
 
-function getColor(vote) {
-    if (vote >= 8) {
+function getColor(vote_average) {
+    if (vote_average >= 8) {
         return 'green';
     }
-    else if (vote >= 5 ) {
+    else if (vote_average >= 5 ) {
         return 'orange';
     }
     else {
