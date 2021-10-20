@@ -28,12 +28,13 @@ function showMovies(data) {
         <div class="movie-col">
         <h2 class="title-movie-card">${title}</h2>
         <img class="img-poster" src="${IMG_URL+poster_path}" alt="${title}">
-        <h3>Release date : ${release_date}  </h3>
+        <h3 class="${getColor(vote_average)} rating-star">Rating : ★${vote_average}/10</h3>
+        
         <hr>
         <h3> Overview : </h3>
         <p style="letter-spacing:0.2px;" class="overview-section">${overview}</p>
         <hr>
-        <h3 class="${getColor(vote_average)}">Rating : ${vote_average} </h3>
+        <h3 style="letter-spacing:1px;">Release date : ${release_date}  </h3>
         </div>`
 
         main.appendChild(movieEl);
