@@ -8,24 +8,45 @@ html {
     scroll-behavior: smooth;
 }
 
-a {
-    text-decoration: none;
-    color: var(--primary);
-}
 body {
     margin: 0;
     padding: 0;
     overflow-x: none;
     box-sizing: border-box;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    background: rgba(22,26,52,1);
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(19, 18, 18); 
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(49, 47, 47); 
 }
 
 .navigation {
     background-color: black;
     align-items: center;
     margin: 0;
-    border-bottom: 2px solid var(--primary);
-    border-top: 2px solid var(--primary);
 }
 
 .nav-list {
@@ -84,14 +105,21 @@ hr {
     border: 1px solid var(--primary);
 }
 
+.logo-main {
+    float: left;
+    margin: 25px 0px 0px 25px;
+}
+
 .search-col {
-    padding: 15px;
+    padding: 13px;
     width: 260px;
     font-size: medium;
     background-color:#0d0e14;
     border-radius: 7px;
     color: var(--primary);
     border: none;
+    float: right;
+    margin: 25px 25px 0px 0px;
 }
 
 .btn-search {
@@ -102,10 +130,11 @@ hr {
 }
 
 .main-list {
-    background: rgb(215,38,61);
-    background: linear-gradient(0deg, rgba(215,38,61,1) 0%, rgba(22,26,52,1) 94%);
+    background: rgb(92,129,156);
+    background: linear-gradient(0deg, rgba(92,129,156,1) 14%, rgba(22,26,52,1) 100%);
     padding: 15px;
     color: var(--primary);
+    margin-top: 45px;
 }
 
 .movie-row {
@@ -116,40 +145,47 @@ hr {
 
 .movie-col {
     width: 305px;
-    max-height: 1100px;
+    max-height: 600px;
     margin: 12px;
     padding: 15px;
     border-radius: 7px;
     background: rgb(64,55,145);
-    background: linear-gradient(211deg, rgba(64,55,145,1) 13%, rgba(73, 1, 7, 0.998) 83%);
+    background: linear-gradient(211deg, rgba(64,55,145,1) 13%, rgba(22,26,52,1) 100%);
     color: var(--primary);
     flex-direction: column;
     flex: 1 0 0%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-family: 'Raleway',sans-serif;
+    border: 1px solid rgb(0, 0, 0);
 }
 
 .movie-col:hover {
-    box-shadow: 5px 5px 10px 2px rgb(255, 51, 0, 10);
+    box-shadow: 4px 4px 9px 0px rgba(255, 255, 255, 0.76)
 }
 
 .title-movie-card {
-    width: 305px;
+    width: 295px;
     height: 65px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
 .overview-section {
-    height: 360px;
+    max-height: 380px;
 }
 
+.rating-star {
+    letter-spacing: 0.8px;
+}
 
 .img-poster {
-    height: 445px;
-    width: 305px;
+    height: 425px;
+    width: 292px;
     border-radius: 5px;
 }
 
 footer {
-    padding: 25px;
+    padding: 15px;
     background-color: black;
     align-items: center;
     color: var(--primary);
@@ -184,4 +220,29 @@ footer {
     .overview-section {
         max-height: 360px;
     }
+    .logo-main {
+        text-align: center;
+        float: none;
+    }
+    
+    .search-col {
+        padding: 13px;
+        width: 260px;
+        font-size: medium;
+        background-color:#0d0e14;
+        border-radius: 7px;
+        color: var(--primary);
+        border: none;
+        float: none;
+        margin-left: 25px;
+    }
+
+    .main-list {
+        background: rgb(92,129,156);
+        background: linear-gradient(0deg, rgba(92,129,156,1) 14%, rgba(22,26,52,1) 100%);
+        padding: 15px;
+        color: var(--primary);
+        margin-top: 5px;
+    }
+    
 }
