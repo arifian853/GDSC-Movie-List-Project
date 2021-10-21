@@ -47,12 +47,13 @@ a {
     background-color: black;
     align-items: center;
     margin: 0;
+    padding: 20px;
 }
 
 .nav-list {
     display: flex;
     justify-content: center;
-    margin-right: 35px;
+    text-align: center;
 }
 
 .list-content {
@@ -107,19 +108,19 @@ hr {
 
 .logo-main {
     float: left;
-    margin: 25px 0px 0px 25px;
+    margin: 25px 0px 0px 140px;
 }
 
 .search-col {
     padding: 13px;
     width: 260px;
-    font-size: medium;
+    font-size: 1rem;
     background-color:#0d0e14;
     border-radius: 7px;
     color: var(--primary);
     border: none;
     float: right;
-    margin: 25px 25px 0px 0px;
+    margin: 25px 140px 0px 0px;
 }
 
 .btn-search {
@@ -223,6 +224,7 @@ footer {
     .logo-main {
         text-align: center;
         float: none;
+        margin: 20px 0px 15px 0px;
     }
     
     .search-col {
@@ -234,7 +236,7 @@ footer {
         color: var(--primary);
         border: none;
         float: none;
-        margin-left: 25px;
+        margin: 25px 0px 0px 0px;
     }
 
     .main-list {
