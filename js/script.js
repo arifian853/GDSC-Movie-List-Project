@@ -17,6 +17,7 @@ function getMovies(url) {
     })
 }
 
+
 function showMovies(data) {
     main.innerHTML = '';
 
@@ -26,15 +27,14 @@ function showMovies(data) {
         movieEl.classList.add('movie');
         movieEl.innerHTML = `
         <div class="movie-col">
-        <h2 class="title-movie-card">${title}</h2>
+        <h2 class="title-movie-card">${movie.title}</h2>
         <img class="img-poster" src="${IMG_URL+poster_path}" alt="${title}">
-        <h3 class="${getColor(vote_average)} rating-star">Rating : ★${vote_average}/10</h3>
-        
-        <hr>
+        <h3 class="rating-star">  <span class=" ${getColor(vote_average)}"> ★ ${vote_average} /10</span></h3>
         <h3> Overview : </h3>
         <p style="letter-spacing:0.2px;" class="overview-section">${overview}</p>
         <hr>
         <h3 style="letter-spacing:1px;">Release date : ${release_date}  </h3>
+        <p> <a class="more-button" href="https://www.themoviedb.org/movie/${movie.id}" target="_blank"> See more </a> </p>
         </div>`
 
         main.appendChild(movieEl);
