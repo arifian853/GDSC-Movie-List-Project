@@ -123,13 +123,6 @@ hr {
     margin: 25px 140px 0px 0px;
 }
 
-.btn-search {
-    padding: 10px;
-    background-color: var(--primary);
-    border: 1px solid black;
-    border-radius: 5px;
-}
-
 .main-list {
     background: rgb(92,129,156);
     background: linear-gradient(0deg, rgba(92,129,156,1) 14%, rgba(22,26,52,1) 100%);
@@ -146,23 +139,43 @@ hr {
 
 .movie-col {
     width: 305px;
-    max-height: 600px;
+    max-height: 595px;
     margin: 12px;
     padding: 15px;
     border-radius: 7px;
     background: rgb(64,55,145);
     background: linear-gradient(211deg, rgba(64,55,145,1) 13%, rgba(22,26,52,1) 100%);
     color: var(--primary);
-    flex-direction: column;
-    flex: 1 0 0%;
+    letter-spacing: 1px;
     overflow-y: scroll;
     overflow-x: hidden;
-    font-family: 'Raleway',sans-serif;
+    font-family: 'Rubik',sans-serif;
     border: 1px solid rgb(0, 0, 0);
 }
 
 .movie-col:hover {
-    box-shadow: 4px 4px 9px 0px rgba(255, 255, 255, 0.76)
+    box-shadow: 4px 4px 9px 0px rgba(138, 83, 83, 0.76);
+}
+
+span.green {
+    color: lightgreen;
+    padding: 5px;
+    background-color: #121422;
+    border-radius: 7px;
+}
+
+span.orange {
+    color: orange;
+    padding: 5px;
+    background-color: #121422;
+    border-radius: 7px;
+}
+
+span.red {
+    color:var(--crimson);
+    padding: 5px;
+    background-color: #121422;
+    border-radius: 7px;
 }
 
 .title-movie-card {
@@ -183,6 +196,16 @@ hr {
     height: 425px;
     width: 292px;
     border-radius: 5px;
+}
+
+.more-button {
+    padding: 10px;
+    background-color: #121422;
+    border-radius: 7px;
+}
+
+.more-button:hover {
+    color: var(--crimson);
 }
 
 footer {
