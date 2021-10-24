@@ -34,7 +34,7 @@ function showMovies(data) {
         <p style="letter-spacing:0.2px;" class="overview-section">${overview}</p>
         <hr>
         <h3 style="letter-spacing:1px;">Release date : ${release_date}  </h3>
-        <p> <a class="more-button" href="https://www.themoviedb.org/movie/${movie.id}" target="_blank"> See more </a> </p>
+        <p> <a class="more-button" href="https://www.themoviedb.org/movie/${movie.id}" target="_blank"> See more &#8594;</a> </p>
         </div>`
 
         main.appendChild(movieEl);
