@@ -155,7 +155,7 @@ hr {
 }
 
 .movie-col:hover {
-    box-shadow: 4px 4px 9px 0px rgba(138, 83, 83, 0.76);
+    box-shadow: rgba(252, 208, 179, 1) 0px 0px 0px 2px, rgba(252, 208, 179, 0.39) 0px 1px 0px inset;
 }
 
 span.green {
