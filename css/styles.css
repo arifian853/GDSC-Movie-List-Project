@@ -37,6 +37,7 @@ a {
     background: rgb(19, 18, 18); 
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
   }
   
   /* Handle on hover */
