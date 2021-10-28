@@ -19,13 +19,13 @@ Here is the content on this web :
 
 ## Overview
 
-## Home View
+## A. Home View
 ![I](img/Screenshot-1.png)
-##Search by Name
+## B. Search by Name
 ![II](img/Screenshot-2.png)
-## Search by Genre buttons
+## C. Search by Genre buttons
 ![III](img/Screenshot-3.png)
-## Scroll-back to top button
+## D. Scroll-back to top button
 ![IV](img/Screenshot-4.png)
 
 # Thank You !
