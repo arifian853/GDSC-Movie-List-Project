@@ -22,26 +22,24 @@ a {
     text-decoration: none;
     color: var(--primary);
 }
-
+/*Scrollbar*/
 ::-webkit-scrollbar {
     width: 10px;
   }
   
-  /* Track */
-  ::-webkit-scrollbar-track {
+ ::-webkit-scrollbar-track {
     background: transparent; 
-  }
+ }
    
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
+ ::-webkit-scrollbar-thumb {
     background: rgb(19, 18, 18); 
     border-radius: 5px;
-  }
+ }
   
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
+ ::-webkit-scrollbar-thumb:hover {
     background: rgb(49, 47, 47); 
 }
+/*Scrollbar*/
 
 .navigation {
     background-color: black;
