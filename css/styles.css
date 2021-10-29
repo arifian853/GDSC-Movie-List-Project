@@ -22,24 +22,26 @@ a {
     text-decoration: none;
     color: var(--primary);
 }
-/*Scrollbar*/
+
 ::-webkit-scrollbar {
     width: 10px;
   }
   
- ::-webkit-scrollbar-track {
+  /* Track */
+  ::-webkit-scrollbar-track {
     background: transparent; 
- }
+  }
    
- ::-webkit-scrollbar-thumb {
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
     background: rgb(19, 18, 18); 
     border-radius: 5px;
- }
+  }
   
- ::-webkit-scrollbar-thumb:hover {
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
     background: rgb(49, 47, 47); 
 }
-/*Scrollbar*/
 
 .navigation {
     background-color: black;
@@ -54,6 +56,11 @@ a {
     text-align: center;
 }
 
+.main-title {
+    margin: 85px 15px 45px 15px;
+    font-family: 'Julius Sans One', sans-serif;
+    letter-spacing: 1.5px;
+}
 .list-content {
     margin: 0px 15px 0px 15px;
     padding: 0px 7px 0px 7px;
@@ -149,7 +156,7 @@ hr {
     background: linear-gradient(0deg, rgba(92,129,156,1) 14%, rgba(22,26,52,1) 100%);
     padding: 15px;
     color: var(--primary);
-    margin-top: 15px;
+    margin-top: 5px;
 }
 
 .accordion {
@@ -163,8 +170,9 @@ hr {
     font-size: 15px;
     transition: 0.4s;
     border-radius: 7px;
-    margin-top: 90px;
-    width: 500px;
+    margin-top: 10px;
+    width: 326px;
+    margin-left: -5px;
 }
   
 .active, .accordion:hover {
@@ -228,6 +236,12 @@ span.red {
     border-radius: 7px;
 }
 
+.lang {
+    background-color: var(--primary-bg);
+    padding: 7px;
+    border-radius: 7px;
+}
+
 .title-movie-card {
     width: 295px;
     height: 65px;
@@ -245,7 +259,11 @@ span.red {
 .img-poster {
     height: 425px;
     width: 292px;
-    border-radius: 5px;
+    border-radius: 7px;
+}
+
+.img-poster:hover {
+    box-shadow: rgba(252, 208, 179, 0.5) 0px 0px 0px 2px, rgba(252, 208, 179, 0.39) 0px 1px 0px inset;
 }
 
 .more-button {
@@ -312,7 +330,9 @@ footer {
         padding: 0px;
         overflow-x: hidden;
     }
-
+    .main-title {
+        margin: 35px 15px 35px 15px;
+    }
     .overview-section {
         max-height: 360px;
     }
@@ -331,7 +351,7 @@ footer {
         color: var(--primary);
         border: none;
         float: none;
-        margin: 25px 0px 0px 0px;
+        margin: 5px 0px 0px 0px;
     }
 
     .main-list {
@@ -370,6 +390,8 @@ footer {
         outline: none;
         font-size: 15px;
         transition: 0.4s;
-        margin-top: 15px;
+        margin-top: 5px;
+        margin-left: 0;
     }
+
 }
