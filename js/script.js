@@ -134,17 +134,19 @@ function showMovies(data) {
     main.innerHTML = '';
 
     data.forEach(movie => {
-        const {title, poster_path, vote_average, overview, release_date} = movie;
+        const {title, poster_path, vote_average, overview, release_date, original_language} = movie;
         const movieEl = document.createElement('div');
         movieEl.classList.add('movie');
         movieEl.innerHTML = `
         <div class="movie-col">
         <h2 class="title-movie-card">${movie.title}</h2>
+        <a href="https://www.themoviedb.org/movie/${movie.id}" target="_blank"> 
         <img class="img-poster" src="${IMG_URL+poster_path}" alt="${title}">
+        </a>
         <h3 class="rating-star">  <span class=" ${getColor(vote_average)}"> ★ ${vote_average} /10</span></h3>
-        <h3> Overview : </h3>
+        <p> Language : <span class="lang"> ${original_language} </span>  </p>
         <p style="letter-spacing:0.2px;" class="overview-section">
-        <p> <b> ${movie.title} </b> </p>
+        <h3> <b> ${movie.title} </b> </h3>
        
         ${overview}
         </p>
@@ -181,3 +183,16 @@ form.addEventListener('submit', (e) => {
         getMovies(API_URL);
     }
 })
+
+var i=0,text;
+    
+var text = " Million of movies you love to discover ! ";
+
+function typing() {
+    if(i<text.length){
+        document.getElementById("text").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typing,80);
+    }
+}
+typing();
